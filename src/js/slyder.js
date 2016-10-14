@@ -146,10 +146,7 @@
         },
         update: function (){},
         destroy: function (){
-          console.log('this.$el', this.$el);
-
           $('.' + settings.current).removeClass(settings.current);
-          $('[data-h]').removeAttr('data-h');
 
           this.removeAttr('style');
         }
