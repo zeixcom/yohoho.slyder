@@ -147,11 +147,11 @@
         update: function (){},
         destroy: function (){
           console.log('this.$el', this.$el);
-          
-          $('.' + Slyder.prototype.options.current).removeClass(Slyder.prototype.options.current);
+
+          $('.' + settings.current).removeClass(settings.current);
           $('[data-h]').removeAttr('data-h');
 
-          $(this).removeAttr('style');
+          this.removeAttr('style');
         }
     };
 
