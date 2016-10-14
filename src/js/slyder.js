@@ -145,9 +145,8 @@
             });
         },
         update: function (){},
-        destroy: function (object, argObj){
-          console.log('object', object);
-          console.log('argObj', argObj);
+        destroy: function (){
+          console.log('data', $.data(this.get(0)));
 
           $('.' + Slyder.prototype.options.current).removeClass(Slyder.prototype.options.current);
         }
