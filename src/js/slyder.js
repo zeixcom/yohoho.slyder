@@ -146,7 +146,7 @@
         },
         update: function (){},
         destroy: function (){
-          console.log('Slyder', Slyder.prototype);
+          console.log('Slyder', this);
 
           $('.' + Slyder.prototype.options.current).removeClass(Slyder.prototype.options.current);
         }
