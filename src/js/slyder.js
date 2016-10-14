@@ -89,14 +89,11 @@
         //set height
         var _height = $cont.attr('data-h');
 
-      console.log('slyder', _slyder);
-      console.log('slyder', _slyder.width);
-
         //update styles
         $curr.addClass(_slyder.options.current);
         _slyder.$el.css({
             height: _height+'px',
-            left: '-='+_slyder.width
+            left: '-='+_slyder.$el.width()
         });
 
         _slyder.$el.trigger('moveContent');
@@ -118,7 +115,7 @@
         $curr.removeClass(_slyder.options.current);
         _slyder.$el.css({
             height: _height+'px',
-            left: '+='+_slyder.width
+            left: '+='+_slyder.$el.width()
         });
 
         _slyder.$el.trigger('moveContent');
