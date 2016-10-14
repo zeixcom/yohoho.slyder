@@ -93,7 +93,7 @@
         $curr.addClass(_slyder.options.current);
         _slyder.$el.css({
             height: _height+'px',
-            left: -1 * _slyder.$el.width()
+            'left': -1 * _slyder.$el.width()
         });
 
         _slyder.$el.trigger('moveContent');
@@ -115,7 +115,7 @@
         $curr.removeClass(_slyder.options.current);
         _slyder.$el.css({
             height: _height+'px',
-            left: 0
+            'left': 0
         });
 
         _slyder.$el.trigger('moveContent');
