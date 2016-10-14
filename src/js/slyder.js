@@ -121,20 +121,20 @@
         _slyder.$el.trigger('moveContent');
     };
 
+    var settings = {
+      back: '.s-back .s-link',
+      current: 's-current',
+      hidden: 's-hidden',
+      item: '.s-item',
+      link: 'h3 .s-link',
+      wrapper: 'slyder-wrapper'
+    };
+
     var methods = {
         init: function (options){
             if (!this.length) {
                 return false;
             }
-
-            var settings = {
-                back: '.s-back .s-link',
-                current: 's-current',
-                hidden: 's-hidden',
-                item: '.s-item',
-                link: 'h3 .s-link',
-                wrapper: 'slyder-wrapper'
-            };
 
             return this.each(function (){
                 if (options) {
@@ -146,9 +146,10 @@
         },
         update: function (){},
         destroy: function (){
-          console.log('data', this.options);
-
           $('.' + Slyder.prototype.options.current).removeClass(Slyder.prototype.options.current);
+          $('[data-h]').removeAttr('data-h');
+
+          $(this).removeAttr('style');
         }
     };
 
