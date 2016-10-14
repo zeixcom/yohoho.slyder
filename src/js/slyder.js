@@ -145,10 +145,9 @@
             });
         },
         update: function (){},
-        destroy: function (){
-          var instance = this.slyder();
-
-          console.log('instance', instance);
+        destroy: function (object, argObj){
+          console.log('object', object);
+          console.log('argObj', argObj);
 
           $('.' + Slyder.prototype.options.current).removeClass(Slyder.prototype.options.current);
         }
