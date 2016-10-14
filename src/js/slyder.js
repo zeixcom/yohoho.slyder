@@ -111,6 +111,9 @@
         //set parent height
         var _height = $parent.hasClass(_slyder.options.hidden) ? $parent.attr('data-h') : _slyder.height;
 
+        console.log('slyder width', _slyder.$el.width());
+        console.log('slyder outerWidth', _slyder.$el.outerWidth);
+
         //update styles
         $curr.removeClass(_slyder.options.current);
         _slyder.$el.css({
