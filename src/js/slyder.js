@@ -146,6 +146,8 @@
         },
         update: function (){},
         destroy: function (){
+          console.log('this.$el', this.$el);
+          
           $('.' + Slyder.prototype.options.current).removeClass(Slyder.prototype.options.current);
           $('[data-h]').removeAttr('data-h');
 
