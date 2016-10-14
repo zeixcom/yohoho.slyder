@@ -95,6 +95,8 @@
             height: _height+'px',
             left: '-='+_slyder.width
         });
+
+        _slyder.$el.trigger('moveContent');
     };
 
     Slyder.prototype.getBack = function (e){
@@ -115,6 +117,8 @@
             height: _height+'px',
             left: '+='+_slyder.width
         });
+
+        _slyder.$el.trigger('moveContent');
     };
 
     var methods = {
