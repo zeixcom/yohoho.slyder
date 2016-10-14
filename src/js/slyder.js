@@ -89,6 +89,9 @@
         //set height
         var _height = $cont.attr('data-h');
 
+      console.log('slyder', _slyder);
+      console.log('slyder', _slyder.width);
+
         //update styles
         $curr.addClass(_slyder.options.current);
         _slyder.$el.css({
