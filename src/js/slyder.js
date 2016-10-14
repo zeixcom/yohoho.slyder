@@ -146,9 +146,9 @@
         },
         update: function (){},
         destroy: function (){
-          console.log('Slyder', Slyder());
+          console.log('Slyder', Slyder.prototype);
 
-          $('.' + Slyder.options.current).removeClass(Slyder.options.current);
+          $('.' + Slyder.prototype.options.current).removeClass(Slyder.prototype.options.current);
         }
     };
 
